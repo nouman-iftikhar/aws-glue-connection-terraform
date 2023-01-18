@@ -1,0 +1,6 @@
+db-endpoint = ""
+database-name = ""
+subnet_id = ""
+cidr_blocks = ""
+vpc_id = ""
+bucket-name = ""
