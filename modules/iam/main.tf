@@ -22,13 +22,13 @@ resource "aws_iam_policy" "glue_policy" {
     Version = "2012-10-17"
     Statement = [
       {
-        Action   = ["glue:*",
-        "s3:GetBucketLocation",
-        "s3:ListBucket",
-        "s3:ListAllMyBuckets",
-        "s3:GetBucketAcl",
-        "cloudwatch:PutMetricData",
-        "s3:GetObject",
+        Action = ["glue:*",
+          "s3:GetBucketLocation",
+          "s3:ListBucket",
+          "s3:ListAllMyBuckets",
+          "s3:GetBucketAcl",
+          "cloudwatch:PutMetricData",
+          "s3:GetObject",
         "s3:PutObject"]
         Effect   = "Allow"
         Resource = "*"
