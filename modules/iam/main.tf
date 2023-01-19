@@ -1,7 +1,6 @@
-resource "aws_iam_role" "aws-glue" {
-  name                = "aws-glue-role"
+resource "aws_iam_role" "aws_glue" {
   assume_role_policy  = data.aws_iam_policy_document.glue_role_policy.json
-  managed_policy_arns = [aws_iam_policy.glue-policy.arn]
+  managed_policy_arns = [aws_iam_policy.glue_policy.arn]
 }
 
 data "aws_iam_policy_document" "glue_role_policy" {
@@ -17,8 +16,7 @@ data "aws_iam_policy_document" "glue_role_policy" {
   }
 }
 
-resource "aws_iam_policy" "glue-policy" {
-  name = "policy-618033"
+resource "aws_iam_policy" "glue_policy" {
 
   policy = jsonencode({
     Version = "2012-10-17"

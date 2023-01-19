@@ -1,12 +1,7 @@
-variable "aws_region" {}
 variable "db_endpoint" {}
 variable "db_name" {}
 variable "subnet_id" {}
-variable "cidr_blocks" {}
-variable "vpc_id" {}
-variable "bucket_name" {}
+variable "security_group" {}
 variable "glue_connection_name" {}
 variable "glue_connection_password" {}
 variable "glue_connection_username" {}
-variable "glue_crawler_name" {}
-variable "glue_job_name" {}
